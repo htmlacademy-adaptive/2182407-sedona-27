@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Артём Яковлев](https://up.htmlacademy.ru/adaptive/27/user/2182407).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
