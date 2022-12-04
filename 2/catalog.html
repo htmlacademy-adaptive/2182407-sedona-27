@@ -6,128 +6,120 @@
     <base href="https://htmlacademy-adaptive.github.io/2182407-sedona-27/2/">
 </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="./img/logo.png" width="185" height="96" alt="Город Седона">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/logo.png" width="185" height="96" alt="Город Седона">
       </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
+      <nav class="navigation header-navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a href="catalog.html">Фото и Видео</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Фото и Видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <h1 class="visually-hidden">Фото и Видео</h1>
+    <main class="page__main">
       <section class="intro">
-        <div class="intro-wrapper">                                           <!--Возможно не пригодится-->
-          <img src="#" alt="Седона">
-        </div>
+        <h1 class="visually-hidden">Фото и Видео</h1>
+        <img src="#" alt="Седона">
       </section>
-      <section class="about-catalog">
-        <div class="about-catalog-wrapper">
+      <section class="card">
+        <hgroup class="card__about">
           <h2>Фото и Видео</h2>
           <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </div>
-      </section>
-      <section class="cards">
-        <div class="cards__wrapper">
-          <ul class="card__list">
-            <li class="card__item">
-              <div class="card__item__content">
-                <img class="card__item__image" src="#" alt="Неродные просторы">
-                <h3 class="card__item__title">Неродные просторы</h3>
-                <p class="card__item__autor">Автор фото: Борис</p>
-                <button class="card__item__favorite"><span class="visually-hidden">Мне нравится</span></button>
-                <span class="favorites">1350</span>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card__item__content">
-                <img class="card__item__image" src="#" alt="Местная растительность">
-                <h3 class="card__item__title">Местная растительность</h3>
-                <p class="card__item__autor">Автор фото: Сергей</p>
-                <button class="card__item__favorite"><span class="visually-hidden">Мне нравится</span></button>
-                <span class="favorites">143</span>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card__item__content">
-                <img class="card__item__image" src="#" alt="Дорога на север">
-                <h3 class="card__item__title">Дорога на север</h3>
-                <p class="card__item__autor">Автор фото: Петр</p>
-                <button class="card__item__favorite"><span class="visually-hidden">Мне нравится</span></button>
-                <span class="favorites">96</span>
-              </div>
-            </li>
-            <li class="card__item">
-              <div class="card__item__content">
-                <img class="card__item__image" src="#" alt="Мост дьявола">
-                <h3 class="card__item__title">Мост дьявола</h3>
-                <p class="card__item__autor">Автор фото: Антон</p>
-                <button class="card__item__favorite"><span class="visually-hidden">Мне нравится</span></button>
-                <span class="favorites">254</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+        </hgroup>
+        <ul class="card__list">
+          <li class="card__item">
+            <a class="card__link" href="#">
+              <img class="card__item__image" src="#" alt="Неродные просторы">
+            </a>
+            <h3 class="card__item__title">Неродные просторы</h3>
+            <p class="card__item__autor">Автор фото: Борис</p>
+            <button class="card__item__favorite">
+              <span class="visually-hidden">Мне нравится</span>
+              <span class="favorites">1350</span>
+            </button>
+          </li>
+          <li class="card__item">
+            <a class="card__link" href="#">
+              <img class="card__item__image" src="#" alt="Местная растительность">
+            </a>
+            <h3 class="card__item__title">Местная растительность</h3>
+            <p class="card__item__autor">Автор фото: Сергей</p>
+            <button class="card__item__favorite">
+              <span class="visually-hidden">Мне нравится</span>
+              <span class="favorites">143</span>
+            </button>
+          </li>
+          <li class="card__item">
+            <a class="card__link" href="#">
+              <img class="card__item__image" src="#" alt="Дорога на север">
+            </a>
+            <h3 class="card__item__title">Дорога на север</h3>
+            <p class="card__item__autor">Автор фото: Петр</p>
+            <button class="card__item__favorite">
+              <span class="visually-hidden">Мне нравится</span>
+              <span class="favorites">96</span>
+            </button>
+          </li>
+          <li class="card__item">
+            <a class="card__link" href="#">
+              <img class="card__item__image" src="#" alt="Мост дьявола">
+            </a>
+            <h3 class="card__item__title">Мост дьявола</h3>
+            <p class="card__item__autor">Автор фото: Антон</p>
+            <button class="card__item__favorite">
+              <span class="visually-hidden">Мне нравится</span>
+              <span class="favorites">254</span>
+            </button>
+          </li>
+        </ul>
       </section>
       <section class="video-preview">
-        <div class="video-preview__wrapper">
+        <hgroup class="video-preview">
           <h2 class="video-preview__title">Все еще сомневаетесь?</h2>
           <p class="video-preview__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
-      </section>
-      <section class="video">
-        <div class="video__wrapper">
-          <video src="#"></video>
-        </div>
+        </hgroup>
+        <video class="video-preview__video" src="#"></video>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag">
-          <h2 class="hashtag-title">#VISITSEDONA</h2>
-        </div>
-        <div class="main-footer__contacts">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social___link social__link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social___link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social___link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы на Ютубе</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+    <footer class="footer">
+      <h2 class="footer__hashtag">#VISITSEDONA</h2>
+      <ul class="socials footer__socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
-        </div>
-      </div>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы на Ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <small class="copyright footer__copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано:
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </small>
     </footer>
+  </body>
+</html>
