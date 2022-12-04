@@ -5,84 +5,80 @@
     <title>Седона:Отзыв</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="./img/logo.png" width="185" height="96" alt="Город Седона">
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/logo.png" width="185" height="96" alt="Город Седона">
       </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Фото и Видео</a>
-            </li>
-            <li class="site-list__item site-list__item--current">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Фото и Видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <h1 class="visually-hidden">Город "Седона"</h1>
-      <img src="#" alt="Sedona">
-      <section class="intro">
-        <h2>Оставьте свой отзыв</h2>
-        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </section>
-      <section class="feedback">
-        <form>
-          <fieldset class="personal-information-group">
+    <main class="page__body">
+      <div>
+        <img src="#" alt="Седона">
+      </div>
+        <form class="feedback">
+          <hgroup class="feedback__lead">
+            <h1>Оставьте свой отзыв</h1>
+            <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </hgroup>
+          <fieldset class="personal-information">
             <legend>Представьтесь:</legend>
             <ul class="personal-information__list">
               <li class="personal-information__item">
-                <label class="name-description">
-                  Имя*:
-                  <input class="name__text-field" type="text" name="name">
+                <label class="name-description" for="name">
+                  Имя <a href="#required-note" aria-labelledby="required-note">*</a>:
                 </label>
+                <input class="name-text-field" id="name" type="text" name="name" required>
               </li>
               <li class="personal-information__item">
-                <label class="surname-description">
-                  Фамилия*:
-                  <input class="surname__text-field" type="text" name="surname">
+                <label class="name-description" for="surname">
+                  Фамилия <a href="#required-note" aria-labelledby="required-note">*</a>:
                 </label>
+                <input class="name-text-field" id="surname" type="text" name="surname" required>
               </li>
               <li class="personal-information__item">
-                <label class="patronymic-description">
+                <label class="name-description" for="patronymic">
                   Отчество:
-                  <input class="patronymic___text-field" type="text" name="patronymic">
                 </label>
+                <input class="name-text-field" id="patronymic" type="text" name="patronymic">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contacts-information-group">
+          <fieldset class="contacts-information">
             <legend>Контактная информация:</legend>
             <ul class="contacts-information__list">
               <li class="contacts-information___item">
                 <label class="phone-description">
-                  Контактный телефон*:
-                  <input class="phone__text-field" type="tel" name="phone">
+                  Контактный телефон <a href="#required-note" aria-labelledby="required-note">*</a>:
+                  <input class="phone-text-field" type="tel" name="phone" required>
                 </label>
-                <button class="#" type="button"><span class="visually-hidden">Телефон</span></button>    <!--Пустой класс-->
               </li>
               <li class="contacts-information___item">
                 <label class="email-description">
-                  Электронная почта*:
-                  <input class="email__text-field" type="email" name="email">
+                  Электронная почта <a href="#required-note" aria-labelledby="required-note">*</a>:
+                  <input class="email-text-field" type="email" name="email" required>
                 </label>
-                <button type="button"><span class="visually-hidden">Почта</span></button>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="impression-group">
+          <fieldset class="impression">
             <legend>Ваше общее впечатление:</legend>
             <ul class="impression__list">
               <li class="impression__item">
@@ -105,7 +101,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="attractions-group">
+          <fieldset class="attractions">
             <legend>Посещенные достопримечательности:</legend>
             <ul class="attractions__list">
               <li class="attractions__item">
@@ -139,38 +135,35 @@
             <textarea name="comment" class="comment__text-field"></textarea>
           </fieldset>
           <button class="comment-accept" type="submit">Отправить отзыв</button>
+          <small class="feedback__form__note" id="required-note"><span aria-hidden="true">* —</span> обязательные поля</small>
         </form>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__hashtag">
-          <h2 class="hashtag-title">#VISITSEDONA</h2>
-        </div>
-        <div class="main-footer__contacts">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social___link social__link--vk" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в Вконтакте</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social___link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграме</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social___link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Мы на Ютубе</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">HTML Academy</span>
+    <footer class="footer">
+      <h2 class="footer__hashtag">#VISITSEDONA</h2>
+      <ul class="socials footer__socials">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
           </a>
-        </div>
-      </div>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы на Ютубе</span>
+          </a>
+        </li>
+      </ul>
+      <small class="copyright footer__copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано:
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </small>
     </footer>
+  </body>
+</html>
