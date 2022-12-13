@@ -1,1 +1,58 @@
-// Начните писать стили здесь
+//fonts
+@font-face {
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/ptsans.woff2) format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsansbold.woff) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/ptsansbold.woff2) format("woff2");
+    font-display: swap;
+}
+.page__body{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color:#000000;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+//header
+@import './blocks/header/header.less';
+@import './blocks/header/navigation/navigation.less';
+//intro
+@import './blocks/intro/intro.less';
+//index
+@import './blocks/advantages/advantages.less';
+@import './blocks/advantages/recommendations/recommendations.less';
+@import './blocks/search/search.less';
+@import './blocks/map/map.less';
+//catalog
+@import './blocks/card/card.less';
+@import './blocks/video-preview/video-preview.less';
+//form
+@import './blocks/feedback/feedback.less';
+//footer
+@import './blocks/footer/footer.less';
+@import './blocks/footer/socials/socials.less';
+@import './blocks/footer/copyright/copyright.less';
+
