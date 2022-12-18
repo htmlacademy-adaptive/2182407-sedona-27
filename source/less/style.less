@@ -1,58 +1,25 @@
-//fonts
-@font-face {
-    font-family:"PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/ptsans.woff) format("woff");
-    font-display: swap;
-}
-@font-face {
-    font-family:"PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/ptsans.woff2) format("woff2");
-    font-display: swap;
-}
-@font-face {
-    font-family:"PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url(../fonts/ptsansbold.woff) format("woff");
-    font-display: swap;
-}
-@font-face {
-    font-family:"PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url(../fonts/ptsansbold.woff2) format("woff2");
-    font-display: swap;
-}
-.page__body{
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color:#000000;
-    background-color: #ffffff;
-    margin: 0 auto;
-}
+//global
+@import "./blocks/global/fonts.less";
+@import "./blocks/global/variables.less";
+//page
+@import "./blocks/page.less";
 //header
-@import './blocks/header/header.less';
-@import './blocks/header/navigation/navigation.less';
+@import "./blocks/header.less";
+@import "./blocks/navigation.less";
 //intro
-@import './blocks/intro/intro.less';
+@import "./blocks/intro.less";
 //index
-@import './blocks/advantages/advantages.less';
-@import './blocks/advantages/recommendations/recommendations.less';
-@import './blocks/search/search.less';
-@import './blocks/map/map.less';
+@import "./blocks/advantages.less";
+@import "./blocks/recommendations.less";
+@import "./blocks/search.less";
+@import "./blocks/map.less";
 //catalog
-@import './blocks/card/card.less';
-@import './blocks/video-preview/video-preview.less';
+@import "./blocks/card.less";
+@import "./blocks/video-preview.less";
 //form
-@import './blocks/feedback/feedback.less';
+@import "./blocks/feedback.less";
+@import "./blocks/personal-information.less";
 //footer
-@import './blocks/footer/footer.less';
-@import './blocks/footer/socials/socials.less';
-@import './blocks/footer/copyright/copyright.less';
-
+@import "./blocks/footer.less";
+@import "./blocks/socials.less";
+@import "./blocks/copyright.less";
