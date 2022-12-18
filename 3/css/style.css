@@ -2,41 +2,220 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans.woff) format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/ptsans.woff2) format("woff2");
+  src: url(../fonts/ptsans.woff) format("woff"), url(../fonts/ptsans.woff2) format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsansbold.woff) format("woff");
+  src: url(../fonts/ptsansbold.woff) format("woff"), url(../fonts/ptsansbold.woff2) format("woff2");
   font-display: swap;
 }
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url(../fonts/ptsansbold.woff2) format("woff2");
-  font-display: swap;
-}
-.page__body {
-  font-family: "PT Sans", sans-serif;
+.page {
+  background-color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
+  text-align: center;
+  height: 100%;
+}
+.page__body {
+  height: 100%;
   color: #000000;
   background-color: #ffffff;
   margin: 0 auto;
+  max-width: 1200px;
+}
+.page-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navigation__list {
+  background-color: #81b3d2;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.navigation__link {
+  color: inherit;
 }
 .intro {
-  background-color: #81B3D2;
-  background-image: url(../../../img/back-mobile.jpg);
+  background-image: url(../img/back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 0px 0px 90px 0px;
+}
+.intro__image {
+  padding: 90px 0px;
+}
+.about-advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 32px 18px 35px;
+}
+.about-advantages__description {
+  padding: 0px 18px 32px;
+}
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advantages__item:nth-child(1),
+.advantages__item:nth-child(2) {
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 37px 18px;
+}
+.advantages__item {
+  padding: 24px 26px;
+}
+.recommendations__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.recommendations__item {
+  padding: 33px 18px 33px 65px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.recommendations__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 auto 16px;
+}
+.recommendations__description {
+  text-align: left;
+  margin: 0 auto;
+}
+.search {
+  padding: 38px 29px 32px;
+}
+.search__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+  padding-top: 0;
+}
+.search__description {
+  margin: 0;
+}
+.card__about {
+  margin: 37px 20px 25px;
+}
+.card__about-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.card__about-description {
+  text-transform: uppercase;
+  text-align: center;
+}
+.card__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.card__item__image {
+  margin: 24px 20px 15px;
+}
+.card__item__title {
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.card__item__autor {
+  text-align: left;
+  margin: 0 auto 16px;
+}
+.video-preview__about {
+  margin: 17px 26px 38px 28px;
+}
+.video-preview__about__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+  padding: 0;
+}
+.video-preview__about__description {
+  text-transform: uppercase;
+  margin: 0;
+}
+.video-preview__video {
+  margin: 0 20px 28px;
+}
+.feedback__lead {
+  margin: 36px 20px 28px;
+}
+.feedback__lead__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.feedback__lead__description {
+  text-transform: uppercase;
+}
+.footer___hashtag {
+  padding: 38px 77px 34px;
+}
+.footer__socials {
+  margin: 0 82px 40px;
+}
+.socials {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
 }
 /*# sourceMappingURL=style.css.map */
